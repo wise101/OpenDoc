@@ -75,16 +75,12 @@ $(function(){
         </ul>    
     </dd>
 
-
     <dd>
     <div class="title">
-    <span><img src="images/leftico02.png" /></span>002
+    <span><img src="images/leftico02.png" /></span>Diary
     </div>
     <ul class="menuson">
-        <li><cite></cite><a href="flow.html" target="rightFrame">002-001</a><i></i></li>
-        <li><cite></cite><a href="project.html" target="rightFrame">002-002</a><i></i></li>
-        <li><cite></cite><a href="search.html" target="rightFrame">002-003</a><i></i></li>
-        <li><cite></cite><a href="tech.html" target="rightFrame">002-004</a><i></i></li>
+        <li><cite></cite><a href="diary/外甥的逆袭.html" target="rightFrame">外甥的逆袭</a><i></i></li>
         </ul>     
     </dd> 
     </dl>
