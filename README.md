@@ -49,11 +49,11 @@ $(function(){
         <li  class="active">
             <div class="header">
             <cite></cite>
-            <target="rightFrame">C++</a>
+            <a target="rightFrame">C++</a>
             <i></i>
             </div>
             <ul class="sub-menus">
-            <li><a href="IT/C++/VS2013编译zlib.html">001-001-01</a></li>
+            <li><a href="IT/C++/VS2013编译zlib.html">VS2013编译zlib</a></li>
             <li><a href="javascript:;">001-001-02</a></li>
             <li><a href="javascript:;">001-001-03</a></li>
             <li><a href="javascript:;">001-001-04</a></li>
