@@ -40,32 +40,29 @@ $(function(){
 </head>
 <body style="background:#f0f9fd;">
     <div class="lefttop"><span></span>文章列表</div>
-
     <dl class="leftmenu">
     <dd>
     <div class="title">
-    <span><img src="images/leftico01.png" /></span>001
+    <span><img src="images/leftico01.png" /></span>IT技术
     </div>
         <ul class="menuson">
-
         <li  class="active">
             <div class="header">
             <cite></cite>
-            <a href="index.html" target="rightFrame">001-001</a>
+            <target="rightFrame">C++</a>
             <i></i>
             </div>
             <ul class="sub-menus">
-            <li><a href="javascript:;">001-001-01</a></li>
+            <li><a href="IT/C++/VS2013编译zlib.html">001-001-01</a></li>
             <li><a href="javascript:;">001-001-02</a></li>
             <li><a href="javascript:;">001-001-03</a></li>
             <li><a href="javascript:;">001-001-04</a></li>
             </ul>
         </li>
-
         <li>
             <div class="header">
             <cite></cite>
-            <a href="right.html" target="rightFrame">001-002</a>
+            <target="rightFrame">Java</a>
             <i></i>
             </div>                
             <ul class="sub-menus">
@@ -75,7 +72,6 @@ $(function(){
             <li><a href="javascript:;">001-002-04</a></li>
             </ul>
         </li>
-
         </ul>    
     </dd>
 
