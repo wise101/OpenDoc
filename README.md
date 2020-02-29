@@ -1,99 +1,148 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>wise101的博客</title>
-<link href="css/mymenu.css" rel="stylesheet" type="text/css" />
-<script language="JavaScript" src="js/jquery.js"></script>
-<script type="text/javascript">
-$(function(){  
-    //导航切换
-    $(".menuson .header").click(function(){
-        var $parent = $(this).parent();
-        $(".menuson>li.active").not($parent).removeClass("active open").find('.sub-menus').hide();
-
-        $parent.addClass("active");
-        if(!!$(this).next('.sub-menus').size()){
-            if($parent.hasClass("open")){
-                $parent.removeClass("open").find('.sub-menus').hide();
-            }else{
-                $parent.addClass("open").find('.sub-menus').show();    
-            }   
+    <meta charset="UTF-8"/>
+    <title>庄稼汉</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
         }
-    });
-    // 三级菜单点击
-    $('.sub-menus li').click(function(e) {
-        $(".sub-menus li.active").removeClass("active")
-        $(this).addClass("active");
-    });
-
-    $('.title').click(function(){
-        var $ul = $(this).next('ul');
-        $('dd').find('.menuson').slideUp();
-        if($ul.is(':visible')){
-            $(this).next('.menuson').slideUp();
-        }else{
-            $(this).next('.menuson').slideDown();
+        body,
+        html {
+            font-size: 14px;
+            font-family: 'Microsoft Yahei', '微软雅黑', 'Simsun', '宋体', 'Arial', sans-serif;
         }
-    });
-})  
-</script>
+        img {
+            border: 0;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            outline: none;
+        }
+        ol,
+        ul,
+        li {
+            list-style: none;
+        }
+        .head-nav {
+            width: 100%;
+            height: 60px;
+            background: #007130;
+        }
+        .head-nav-con {
+            width: 1200px;
+            height: 60px;
+            margin: auto;
+        }
+        .head-nav-con ul li {
+            width: 170px;
+            float: left;
+            font-size: 20px;
+            text-align: center;
+        }
+        .head-nav-con ul li:hover {
+            background: #ff9c01;
+        }
+        .head-nav-con ul a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+        }
+        .head-nav-con .drop-down {
+            position: relative;
+        }
+        .head-nav-con .drop-down-content {
+            padding: 0;
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background: #007130;
+        }
+        .head-nav-con .drop-down-content li:hover > a {
+            background-color: #ff9c01;
+        }
+        .head-nav-con .drop-down:hover .drop-down-content {
+            display: block;
+        }
+        .head-nav-con .drop-down-2 {
+            position: relative;
+        }
+        .head-nav-con .drop-down-content-2 {
+            padding: 0;
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: #007130;
+            right: -170px;
+            top: 0;
+        }
+        .head-nav-con .drop-down-content-2 > li {
+            float: none;
+            background-color: #007130;
+        }
+        .head-nav-con .drop-down-content-2 li:hover a {
+            background-color: #ff9c01;
+        }
+        .head-nav-con .drop-down-2:hover .drop-down-content-2 {
+            display: block;
+        }
+    </style>
 </head>
-<body style="background:#f0f9fd;">
-    <div class="lefttop"><span></span>文章列表</div>
-
-    <dl class="leftmenu">
-
-    <dd>
-    <div class="title">
-    <span><img src="images/leftico01.png" /></span>001
-    </div>
-        <ul class="menuson">
-
-        <li  class="active">
-            <div class="header">
-            <cite></cite>
-            <a href="index.html" target="rightFrame">001-001</a>
-            <i></i>
+<body>
+<div class="main">
+    <!--头部-->
+    <div class="header">
+        <div class="head-nav">
+            <div class="head-nav-con clearFloat">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">一级菜单</a></li>
+                    <li class="drop-down"><a href="#">二级菜单</a>
+                        <ul class="drop-down-content">
+                            <li><a href="#">二级菜单</a></li>
+                            <li><a href="#">二级菜单</a></li>
+                            <li><a href="#">二级菜单</a></li>
+                            <li><a href="#">二级菜单</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href="#">二级菜单</a>
+                        <ul class="drop-down-content">
+                            <li class="drop-down-2"><a href="#">三级菜单</a>
+                                <ul class="drop-down-content-2">
+                                    <li><a href="#">三级菜单</a></li>
+                                    <li><a href="#">三级菜单</a></li>
+                                    <li><a href="#">三级菜单</a></li>
+                                </ul>
+                            </li>
+                            <li class="drop-down-2"><a href="#">三级菜单</a>
+                                <ul class="drop-down-content-2">
+                                    <li><a href="#">三级菜单</a></li>
+                                    <li><a href="#">三级菜单</a></li>
+                                    <li><a href="#">三级菜单</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#">二级菜单</a></li>
+                            <li class=""><a href="#">二级菜单</a></li>
+                            <li class=""><a href="#">二级菜单</a></li>
+                            <li class=""><a href="#">二级菜单</a></li>
+                            <li class="drop-down-2"><a href="#">三级菜单</a>
+                                <ul class="drop-down-content-2">
+                                    <li><a href="#">二级菜单</a></li>
+                                    <li><a href="#">二级菜单</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">一级菜单</a></li>
+                    <li><a href="#">一级菜单</a></li>
+                    <li><a href="#">一级菜单</a></li>
+                </ul>
             </div>
-            <ul class="sub-menus">
-            <li><a href="javascript:;">001-001-01</a></li>
-            <li><a href="javascript:;">001-001-02</a></li>
-            <li><a href="javascript:;">001-001-03</a></li>
-            <li><a href="javascript:;">001-001-04</a></li>
-            </ul>
-        </li>
-
-        <li>
-            <div class="header">
-            <cite></cite>
-            <a href="right.html" target="rightFrame">001-002</a>
-            <i></i>
-            </div>                
-            <ul class="sub-menus">
-            <li><a href="javascript:;">001-002-01</a></li>
-            <li><a href="javascript:;">001-002-02</a></li>
-            <li><a href="javascript:;">001-002-03</a></li>
-            <li><a href="javascript:;">001-002-04</a></li>
-            </ul>
-        </li>
-
-        </ul>    
-    </dd>
-
-
-    <dd>
-    <div class="title">
-    <span><img src="images/leftico02.png" /></span>002
+        </div>
     </div>
-    <ul class="menuson">
-        <li><cite></cite><a href="flow.html" target="rightFrame">002-001</a><i></i></li>
-        <li><cite></cite><a href="project.html" target="rightFrame">002-002</a><i></i></li>
-        <li><cite></cite><a href="search.html" target="rightFrame">002-003</a><i></i></li>
-        <li><cite></cite><a href="tech.html" target="rightFrame">002-004</a><i></i></li>
-        </ul>     
-    </dd> 
-
-    </dl>
-
+</div>
 </body>
 </html>
