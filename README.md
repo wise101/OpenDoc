@@ -80,7 +80,7 @@ $(function(){
     <span><img src="images/leftico02.png" /></span>Diary
     </div>
     <ul class="menuson">
-        <li><cite></cite><a href="diary/外甥的逆袭.html" target="rightFrame">外甥的逆袭</a><i></i></li>
+        <li><cite></cite><a href="diary/counterattack of nephew.html" target="rightFrame">外甥的逆袭</a><i></i></li>
         </ul>     
     </dd> 
     </dl>
